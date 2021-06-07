@@ -1,0 +1,1151 @@
+
+/*---========Common Css Bellow =======--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/*h1,h2,h3,h4,h5,h6,p{
+    line-height:.8px;
+}*/
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+/*---========Nav Part  Css Bellow =======--*/
+.navbar{
+    border-bottom: 1px solid #41330b;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.nav-new{
+    background: #111111;
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+   
+}
+.nav-new.navbar-expand-md .navbar-nav .nav-link{
+    line-height: 87px;
+    transition: all linear .3s;
+}
+
+.navbar-expand-md .navbar-nav .nav-item {
+    padding:0 15px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	padding:0 0px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    transition: all linear .4s;
+    line-height: 100px;
+    position: relative;
+}
+.navbar-expand-md .navbar-nav .nav-link::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1.5px;
+    background: #fec600;
+    opacity: 0;
+    transition: all linear .4s;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover{
+    color: #fec600;
+
+}
+
+/*---========Banner part Css Bellow =======--*/
+#banner{
+    position: relative;
+}
+#banner i {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: #171216;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+#banner i:hover {
+    background-color: #fec600;
+}
+#banner .leftArow {
+    position: absolute;
+    top:50%;
+    left: 40px;
+    z-index: 99;
+}
+#banner .rightArow {
+    position: absolute;
+    top:50%;
+    right: 40px;
+    z-index: 99;
+}
+.banner-bg{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center!important;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 89.5%, 0% 100%);
+}
+.banner-bg::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+}
+.banner-content-main{
+    height: 100vh;
+    position: relative;
+    z-index: 9;
+}
+
+.banner-content h3{
+    font-size: 36px;
+    color: #f1f1f1;
+    font-weight: 400;
+   
+}
+.banner-content h2{
+    font-size: 55px;
+    color:#fec600;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    line-height: 55px;
+}
+.banner-content p {
+    color: #f1f1f1;
+    font-weight: 400;
+    line-height: 24px;
+    padding:0 30px;
+    padding-bottom: 60px;
+}
+.banner-content a {
+    color: #ffff;
+    font-weight: 500;
+    padding:18px 49px;
+    font-size: 16px;
+    border:1px solid #fff;
+    text-transform: uppercase;
+    margin:0 10px;
+}
+.banner-content a.btn1 {
+    background-color: #fec600;
+    color: #222;
+    border-color: #fec600;
+    padding:18px 34px;
+}
+.banner-content a:hover {
+    background-color: #fec600;
+    color: #222;
+    border-color: #fec600;
+}
+.banner-content a.btn1:hover {
+    border:1px solid #fff;
+    color: #ffff;
+    background-color: transparent;
+}
+
+/*---========About Part Css Bellow =======--*/
+#about{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.common-heading{
+    padding-bottom: 28px;
+}
+.common-heading h3 {
+    padding-bottom: 5px;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #111111;
+}
+.common-heading p {
+    padding: 0px 24px;
+    color: #444444;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.about-iteam{
+    background: #eee;
+    padding: 40px 35px;
+   transition: all linear .4s;
+}
+
+.about-iteam:hover{
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.30));
+}
+.about-iteam p {
+    padding: 0px 17px;
+    color: #353535;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.about-iteam h4{
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+.about-iteam1{
+    position: relative;
+    z-index: 2;
+}
+.about-iteam1::before{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color:#eee;
+    left: 50%;
+    bottom: -19px;
+    transform: translateX(-50%)rotate(45deg);
+}
+.about-iteam1::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color:#444444;
+    left: 50%;
+    bottom: -58px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: all linear .4s;
+}
+.about-iteam1:hover::after{
+    background-color: #fec600;
+}
+.about-iteam2{
+    position: relative;
+    margin-top: 115px;
+    z-index: 2;
+}
+.about-iteam2 p{
+    padding-left: 20px;
+}
+.about-iteam2::before{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color:#eee;
+    top: 50%;
+    right: -19px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.about-iteam2::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #444444;
+    top: 50%;
+    right: -72px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: all linear .4s;
+}
+.about-iteam2:hover::after{
+    background-color: #fec600;
+}
+.about-iteam3{
+    position: relative;
+    margin-top: 115px;
+    z-index: 2;
+}
+.about-iteam3 p{
+    padding: 0px;
+}
+.about-iteam3::before{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color:#eee;
+    top: 50%;
+    left: -19px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.about-iteam3::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #444444;
+    top: 50%;
+    left: -52px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: all linear .4s;
+}
+.about-iteam3:hover::after{
+    background-color: #fec600;
+}
+
+.about-iteam4{
+    position: relative;
+    margin-top: 70px;
+    z-index: 2;
+}
+.about-iteam4::before{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color:#eee;
+    left: 50%;
+    top: -19px;
+    transform: translateX(-50%)rotate(45deg);
+}
+.about-iteam4::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #444444;
+    left: 50%;
+    top:-52px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: all linear .4s;
+}
+.about-iteam4:hover::after{
+    background-color: #fec600;
+}
+
+.about-img{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.about-img::after{
+    width: 360px;
+    position: absolute;
+    content: '';
+    top:50%;
+    left: 50%;
+    height: 360px;
+   border: 1px solid #7b7b7b;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+.about-img::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 50%;
+   
+}
+
+/*---========Protfoliyo Part Css Bellow =======--*/
+
+#protfoliyo{
+    background: url(../images/prot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+}
+
+#protfoliyo::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top:0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.80);
+   
+}
+
+.prot-main{
+    z-index: 2;
+    position: relative;
+}
+
+.prot-head{
+    padding-top: 110px;
+   
+}
+
+.prot-head h3{
+   font-weight: 400;
+   font-size: 35px;
+   color: #fff;
+   padding-bottom: 4px;
+}
+
+.prot-head p {
+    color:#fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.prot-img{
+    position: relative;
+    transition: all linear .4s;
+    margin: 0px 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+   
+}
+.prot-img:hover .prot-overly{
+    opacity: 1;
+}
+.prot-overly{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.50);
+    opacity: 0;
+}
+.prot-overly i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background:#fff;
+    border-radius: 50%;
+    color:#111111;
+}
+
+/*---========Servics Part Css Bellow =======--*/
+#servics{
+    padding-bottom: 40px;
+}
+#servics .common-heading h3{
+    padding-top: 30px;
+}
+.servics-iteam{
+    position: relative;
+}
+.up{
+    position: absolute;
+    top:-17px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #3e3e3e;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+   transition:all linear.4s;
+   cursor: pointer;
+}
+.up:hover{
+    background: #fec600;
+    border-color: #fec600;
+    z-index: 2;
+}
+
+.down{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #3e3e3e;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    text-align: center;
+    transition:all linear.4s;
+    z-index: 2;
+    cursor: pointer;
+}
+.down:hover{
+    background: #fec600;
+    border-color: #fec600;
+}
+.shape{
+    position: absolute;
+    background:url(../images/shape.png);
+    width: 1px;
+    height: 97%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.servics-left h4{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.servics-right{
+    background: #eeeeee;
+    position: relative;
+    transition: all linear .4s;
+}
+
+.servics-right p{
+   font-size: 14px;
+   font-weight: 400;
+   color: #444444;
+   line-height: 24px;
+   padding: 55px 30px;
+   padding-right: 68px;
+  
+}
+.servics-right::after {
+    position: absolute;
+    content: "";
+    top:50%;
+    left: -19px;
+    width: 38px;
+    height: 38px;
+    background-color:#eee;
+    transform: translateY(-50%)rotate(45deg);
+}
+.servics-icon{
+    background: #eee;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.servics-second{
+    background: #eeeeee;
+    position: relative;
+    transition: all linear .4s;
+}
+.servics-second:hover{
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.30));
+}
+.servics-second p{
+   font-size: 14px;
+   font-weight: 400;
+   color: #444444;
+   line-height: 24px;
+   padding: 55px 30px;
+   padding-right: 68px;
+  
+}
+.servics-second::after {
+    position: absolute;
+    content: "";
+    top:50%;
+    right: -19px;
+    width: 38px;
+    height: 38px;
+    background-color:#eee;
+    transform: translateY(-50%)rotate(45deg);
+}
+
+.sIteam.slick-slide img {
+    display: inline-block;
+}
+
+.sIteam.slick-center .servics-icon {
+    background: #fec600;
+}
+
+.sIteam.slick-center .servics-right{
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.30));
+    transition: all linear .4s;
+}
+.sIteam.slick-center .servics-second{
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.30));
+    transition: all linear .4s;
+}
+.sIteam.slick-center .servics-icon{
+    transform: scale(1.2);
+}
+
+
+/*---========Team Part Css Bellow =======--*/
+#team{
+    background: url(../images/team-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 13%, 100% 0, 100% 87%, 0% 100%);
+    padding-top:150px;
+    padding-bottom: 100px;
+
+}
+
+#team::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.70);
+}
+.team-z{
+    z-index: 99;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.team-img-main{
+    position: relative;
+}
+.up2 {
+    position: absolute;
+    top: -65px;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid#f1f1f1;
+    color: #f1f1f1;
+    font-size: 17px;
+    text-align: center;
+    z-index: 22;
+    cursor: pointer;
+    transition: all linear .4s;
+}
+.down2{
+    position: absolute;
+    bottom:0;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border:1px solid#f1f1f1;
+    color: #f1f1f1;
+    font-size: 17px;
+    text-align: center;
+    z-index: 22;
+    cursor: pointer;
+    transition: all linear .4s;
+}
+.up2:hover{
+    background: #fec600;
+    border-color: #fec600;
+    color: #111111!important;
+}
+.down2:hover{
+    background: #fec600;
+    border-color: #fec600;
+    color: #111111!important;
+}
+.shape2 {
+    position: absolute;
+    background: url(../images/shape2.png);
+    width: 1px;
+    height: 105%;
+    top: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.team-img{
+    padding-bottom: 70px;
+}
+.imagesT{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+   background: #ccc;
+   overflow: hidden;
+   opacity: 0.9;
+}
+
+
+.feeback-details-slider {
+    position: relative;
+    margin-left: 16px!important;
+}
+.feed-comment-iteam::after{
+    position: absolute;
+    content: '';
+    width: 309px;
+    height: 171px;
+    background: url(../images/feedbg.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.feed-comment-iteam{
+    background: #f1f1f1;
+    padding: 60px 30px;
+   position: relative;
+}
+
+.feeback-details-slider{
+    position: relative;
+}
+.feeback-details-slider::before{
+    position: absolute;
+    top:50%;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    background:#f1f1f1;
+    content: "";
+    transform: translateX(-50%)rotate(45deg);
+}
+.team-img-iteam {
+    margin-top: 87px;
+}
+
+.feed-comment-iteam h3{
+   font-size: 20px;
+   font-weight: 500;
+   color: #111;
+   text-transform: capitalize;
+   line-height: 0px;
+}
+.feed-comment-iteam h6{
+   font-size: 16px;
+   font-weight: 400;
+   color: #111;
+   text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.feed-comment-iteam i{
+   font-size: 18px;
+   color: #fec600;
+}
+.feed-comment-iteam p{
+   font-size: 14px;
+   color: #444;
+   font-weight: 400;
+   line-height: 24px;
+}
+.feed-comment-iteam span{
+   font-size: 20px;
+   color: #444;
+   font-weight: 400;
+   font-family: 'Parisienne', cursive;
+}
+
+.team-img.slick-center .imagesT {
+    background-color: #fec600;
+    transform: scale(1.2);
+    overflow: hidden;
+    opacity: 1;
+}
+
+
+/*---========Pricing Part Css Bellow =======--*/
+#pricing{
+    padding-bottom: 70px;
+}
+.pricing-main {
+    background: #f1f1f1;
+}
+.pricing-head{
+    background: #444;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    transition: all linear .3s;
+}
+.pricing-head h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.pricing-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #111;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+    transition: all linear .3s;
+}
+.pricing-circle h4{
+    color: #fff;
+    font-size: 29px;
+    font-weight: 400;
+   padding-top: 10px;
+}
+.pricing-circle p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.pricing-circle::after{
+    position: absolute;
+    top:45px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    content: "";
+    border:1px solid#111;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.pricing-menu {
+    margin-top: -57px;
+}
+.pricing-menu ul li {
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.join-btn {
+    background: #444;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    clip-path: polygon(0 41%, 100% 1%, 100% 100%, 0% 100%);
+    transition: all linear .3s;
+}
+.join-btn a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.pricing-main:hover{
+    box-shadow: -5px 10px 5px 0px rgba(221,221,221,0.75);
+-webkit-box-shadow: -5px 10px 5px 0px rgba(221,221,221,0.75);
+-moz-box-shadow: -5px 10px 5px 0px rgba(221,221,221,0.75);
+}
+.pricing-main:hover .pricing-circle{
+    background-color: #fec600;
+}
+.pricing-main:hover .pricing-circle h4{
+    color: #111;
+}
+.pricing-main:hover .pricing-circle p{
+    color: #111;
+}
+.pricing-main:hover .pricing-head{
+    background: #fec600;
+}
+
+.pricing-main:hover .pricing-head h3{
+    color: #111;
+}
+.pricing-main:hover .join-btn{
+    background: #fec600;
+}
+.pricing-main:hover .join-btn a{
+    color: #111;
+}
+
+/*---========Counter Part Css Bellow =======--*/
+#counter_part {
+    background: url(../images/counter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 20%, 100% 3%, 100% 85%, 0% 100%);
+}
+   #counter_part::after{
+       position: absolute;
+       content: "";
+       top:0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color:rgba(9, 12, 0, 0.7);
+}
+.counter-main {
+    margin-top: 68px;
+}
+
+.counter-iteam{
+    position: relative;
+    z-index: 22;
+    border:1px solid#fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.counter-iteam h3{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.counter-iteam p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*---========Member Part Css Bellow =======--*/
+
+#members{
+  padding-top: 30px;
+ 
+}
+
+.team-item {
+    border: 1px solid #dddddd;
+    transition: all linear .3s;
+    margin-bottom: 50px;
+}
+.team-imgs {
+    position: relative;
+    padding-top: 10px;
+    clip-path: polygon(0 0, 100% 0%, 100% 68%, 0% 82%);
+    background-color: #f1f1f1;
+    transition: all linear .3s;
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(254, 199, 0, 0.5);
+    transition: all linear .3s;
+    opacity: 0;
+}
+.team-item:hover .team-overlay {
+    height: 100%;
+    opacity: 1;
+}
+.team-overlay i {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #353535;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.team-info {
+  margin-top: -50px;
+    transition: all linear .3s;
+}
+.team-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+}
+.team-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+.social {
+    padding-bottom: 22px;
+    margin-top: -30px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.social i {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    line-height: 35px;
+    color: #111;
+    margin:0 11px;
+    transition: all linear .9s;
+}
+.social i:hover {
+    background-color: #fec600;
+    border-color: #fec600;
+}
+.team-item:hover .social {
+    margin-top: 0;
+    opacity: 1;
+}
+
+/*---========Sponser Part Css Bellow =======--*/
+#sponser {
+    background: #f1f1f1;
+    clip-path: polygon(0 13%, 100% 0%, 100% 95%, 0 108%);
+}
+.sponser-iteam{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sponser-img {
+    margin: 0px 10px;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+.sponser-slider .slick-center .sponser-img{
+   border-color:#fec600;
+}
+
+/*---========Footer Css Bellow =======--*/
+#footer {
+    background: rgb(34, 34, 34);
+    clip-path: polygon(0px 19%, 100% 12%, 100% 100%, 0px 100%);
+    margin-top: -102px;
+}
+.footer-logo{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.border-btm{
+    border-bottom: 1px solid#545454;
+}
+
+.contuct-circle{
+    padding-top: 30px;
+    border-right: 1px solid #545454;
+}
+.follow-icon {
+    margin-bottom: 20px;
+}
+
+.contuct-circle i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fec600;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contuct-circle p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 15px;
+    line-height: 24px;
+}
+.follow-text{
+    padding-top: 40px;
+}
+
+.follow-text h4{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.follow-icon i{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    line-height: 35px;
+    color: #111;
+    margin:0 11px;
+    transition: all linear .9s;
+    background-color: #fff;
+}
+
+.follow-icon i:hover {
+    background-color: #fec600;
+    border-color: #fec600;
+}
+
+/*---========CopyRight Css Bellow =======--*/
+#copy-right{
+    background-color: #444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copy-right-text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.copy-right-text span{
+    color: #fec600;
+}
+
+.btm-top-btn{
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #fec600;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 999;
+}
