@@ -7,8 +7,8 @@ $(function(){
     $('.banner-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay:false,
-        autoplaySpeed:1000,
+        autoplay:true,
+        autoplaySpeed:1500,
         arrows:true,
         speed:800,
         dots:false,

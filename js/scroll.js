@@ -31,6 +31,15 @@ $(window).scroll(function(){
 
 });
 
+// Preloder
+
+$(window).on('load',function(){
+
+    $('.preloder').delay(3000).fadeOut(500);
+
+
+});
+
 
 //Smoth Scroll 
 var html_body = $('html, body');
